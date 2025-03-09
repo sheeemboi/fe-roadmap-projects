@@ -3,4 +3,4 @@ Contains all submitted projects and solutions on front-end development in roadma
 
 Frontend Projects:
 1. Single-Page CV Project
-https://github.com/mariano-shem/roadmap.sh-projects/blob/main/Frontend/01-single-page-cv/index.html
+https://github.com/mariano-shem/roadmap.sh-projects/blob/main/Frontend/01-single-page-cv/
