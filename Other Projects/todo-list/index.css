@@ -25,6 +25,7 @@ ul {
 .list-item {
   list-style-type: none;
   padding-left: 0;
+  padding: 0.5rem 0;
 }
 
 .del-btn {

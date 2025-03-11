@@ -6,12 +6,21 @@ const list = document.querySelector("#list")
 addButton.addEventListener('click', () => {
   if(input.validity.valid) {
     list.append(createText())
+    input.value = "";
   } else {
     showError();
     addButton.preventDefault;
   }
-  input.value = "";
 });
+
+//Validate Enter Key
+input.addEventListener('keydown', (e) => {
+  if (e.key === "Enter" && input.validity.valid) {
+    list.append(createText())
+    e.preventDefault();
+    input.value = "";
+  }
+})
 
 input.addEventListener('input', () => {
   document.getElementById("errMsg").innerHTML = "";
