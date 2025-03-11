@@ -8,3 +8,10 @@ Contains all submitted projects and solutions on front-end development in roadma
 
 2. [Basic HTML Website](https://roadmap.sh/projects/basic-html-website)  
   [My Output Link](https://github.com/mariano-shem/roadmap.sh-projects/blob/main/Frontend/02-basic-html-website/) 
+
+
+
+
+# Other Projects
+
+1. [Simple To-Do List](https://github.com/mariano-shem/roadmap.sh-projects/tree/main/Other%20Projects/todo-list)
