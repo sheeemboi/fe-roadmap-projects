@@ -19,10 +19,15 @@ span {
 
 ul {
   padding: 0;
+  width: 100%;
 }
 
-li {
+.list-item {
   list-style-type: none;
   padding-left: 0;
+}
+
+.del-btn {
+  float: right;
 }
 

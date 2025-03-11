@@ -16,6 +16,15 @@ addButton.addEventListener('click', () => {
 input.addEventListener('input', () => {
   document.getElementById("errMsg").innerHTML = "";
 })
+//Check an Item
+const checkItem = (e) => {
+  let parent = e.parentElement;
+  if (parent.querySelectorAll(".checkbox")[0].checked) {
+    parent.style.textDecoration = "line-through";
+  } else {
+    parent.style.textDecoration = "none";
+  }
+}
 // Delete an Item
 const deleteItem = (e) => {
   let parent = e.parentElement;
@@ -34,6 +43,7 @@ const createText = () => {
 const createCheck = () => {
   const check = document.createElement("input");
   check.classList.add("checkbox")
+  check.setAttribute("onclick", "checkItem(this)");
   check.setAttribute("type", "checkbox")
 
   return check;
