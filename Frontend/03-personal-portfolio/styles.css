@@ -21,13 +21,17 @@ body {
   font-family: var(--ff);
   width: 100%;
   margin: 0 auto;
+  overflow-y: scroll;
 }
 header, main, footer {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-evenly;
-  margin: 1rem 0;
+  padding: 1rem 0;
+}
+header {
+  border-bottom: 1px solid black;
 }
 .brand {
   display: flex;
@@ -55,7 +59,7 @@ header, main, footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .projects, .work-exp, .education, .reviews {
   display: flex;
@@ -106,7 +110,28 @@ header, main, footer {
 .reviews blockquote footer {
   display: block;
 }
+/* projects.html */
+.this-projects {
+  h1 {
+    margin: 2rem 0;
+  }
+}
+.this-projects-list {
+  display: flex;
 
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.tp-item {
+  border: 1px solid black;
+  border-radius: 6px;
+  margin: 1rem 0;
+  padding: 1.2rem;
+  > h2 {
+    margin-bottom: 0.6rem;
+  }
+}
 @media screen and (max-width: 480px) {
   header, main {
     flex-direction: column;
@@ -135,13 +160,20 @@ header, main, footer {
     width: 90%;
     margin: 0.4rem 0;
   }
+  /* mobile - projects.html */
+  .this-projects-list {
+    align-items: center;
+  }
+  .tp-item {
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 481px) {
   header {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
   }
   main {
     flex-direction: row;
@@ -160,6 +192,16 @@ header, main, footer {
   }
   .reviews blockquote {
     margin: 0.6rem 0;
+  }
+  /* tablet - projects.html */
+  .this-projects-list {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .tp-item {
+    margin: 1rem 2.5%;
+    width: 45%;
+    padding: 2.4rem 1.2rem;
   }
 }
 @media screen and (min-width:1024px) {
@@ -180,6 +222,11 @@ header, main, footer {
     }
   }
   .reviews blockquote {
+    width: 30%;
+  }
+  /* desktop - projects.html */
+  .tp-item {
+    margin: 1rem 1.5%;
     width: 30%;
   }
 }
