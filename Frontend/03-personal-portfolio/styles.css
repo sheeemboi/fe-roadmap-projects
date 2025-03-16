@@ -8,8 +8,178 @@
   --bg-color: #141d1d;
   --main-color: #f0e9de;
   --secn-color: #447bb5;
-  font-family: "Rubik", sans-serif;
-  h1, h2, h3, h4, h5 {
-    font-family: "Rubik", sans-serif;
+  --ff: "Rubik", sans-serif;
+  --ff2: "Spline Sans Mono", sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--ff2);
+  font-weight: 500;
+}
+body {
+  font-family: var(--ff);
+  width: 100%;
+  margin: 0 auto;
+}
+header, main, footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+.brand {
+  display: flex;
+  justify-content: center;
+}
+.brand img {
+  width: 1rem;
+  margin-right: 0.5rem;
+
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+.nav-item {
+  padding: 0 0.5rem;
+}
+.nav-item a {
+  color: black;
+  text-decoration: none;
+}
+.site-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid black;
+}
+.projects, .work-exp, .education, .reviews {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  > h2 {
+    padding: 1rem 0;
+  }
+}
+.projects-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.projects-list .pl-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 2rem;
+  width: 90%;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin: 0.4rem 0;
+}
+.work-exp .we-item {
+  border: 1px solid black;
+  border-radius: 6px;
+  width: 90%;
+  padding: 1.4rem;
+  margin: 0.4rem 0;
+}
+.educ-program, .educ-course {
+  width: 90%;
+  list-style-position: inside;
+  padding: 0.6rem 0;
+}
+.educ-course {
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 0.8rem;
+}
+.reviews blockquote {
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 1.4rem;
+}
+.reviews blockquote footer {
+  display: block;
+}
+
+@media screen and (max-width: 480px) {
+  header, main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brand {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-banner {
+    min-height: 5rem;
+  }
+  .projects, .work-exp, .education, .reviews{
+    align-items: center;
+    width: 100%;
+  }
+  .projects-list {
+    align-items: center;
+  }
+  .reviews {
+    flex-direction: column;
+  }
+  .reviews blockquote {
+    width: 90%;
+    margin: 0.4rem 0;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .site-banner {
+    min-height: 10rem;
+  }
+  .projects, .work-exp, .education, .reviews {
+    width: 45%;
+    align-self: start;
+    align-items: center;
+  }
+  .projects-list {
+    align-items: center;
+  }
+  .reviews blockquote {
+    margin: 0.6rem 0;
+  }
+}
+@media screen and (min-width:1024px) {
+
+  .site-banner {
+    min-height: 14rem;
+  }
+  .projects, .work-exp, .education {
+    width: 28%;
+  }
+  .reviews {
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    > h2 {
+      width: 95%;
+    }
+  }
+  .reviews blockquote {
+    width: 30%;
   }
 }
