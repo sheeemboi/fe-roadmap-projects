@@ -14,48 +14,47 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-</head>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="styles.css"></head>
 <body>
   <header>
-    <div>
-      <i><img src="" alt="Website icon."></i>
+    <div class="brand">
+      <i><img src="favicon/logo.svg" alt="Website icon."></i>
       <span>Shem Mariano</span>
     </div>
 
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="articles.html">Articles</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="projects.html">Projects</a></li>
+        <li class="nav-item"><a href="articles.html">Articles</a></li>
+        <li class="nav-item"><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section>
+  <main class="this-contact">
+    <section class="contact-head">
       <h1>Shem Mariano</h1>
       <h2>Junior Frontend Developer</h2>
     </section>
-    <form action="">
+    <form class="contact-entry" action="">
       <fieldset>
         <legend>Contact Me</legend>
-        <p>
+        <p class="ce-input">
           <label for="name">Name: <span aria-label="required">*</span></label>
           <input type="text" id="name" name="user-name" required>
         </p>
-        <p>
+        <p class="ce-input">
           <label for="email">Email: <span aria-label="required">*</span></label>
           <input type="email" id="email" name="user-email" required>
         </p>
-
-        <p>
+        <p class="ce-input">
           <label for="msg">Message: <span aria-label="required">*</span></label>
           <textarea name="user-msg" id="msg" required></textarea>
         </p>
-
-        <p>
+        <p class="ce-button">
           <button type="submit">Submit</button>
         </p>
       </fieldset>

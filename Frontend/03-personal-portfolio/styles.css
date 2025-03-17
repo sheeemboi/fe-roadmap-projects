@@ -139,7 +139,33 @@ header {
 .ta-item {
   padding: 1.2rem 0;
   width: 90%;
-border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
+}
+/* contact.html */
+.this-contact {
+  flex-direction: column;
+}
+.contact-head {
+  padding: 1.2rem 0;
+  > h2 {
+    font-size: 1.2rem;
+  }
+}
+.contact-entry {
+  > fieldset {
+    padding: 2rem;
+  }
+}
+.ce-input, .ce-button {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+.ce-button {
+  align-items: flex-end;
+  > button {
+    min-width: 50%;
+  }
 }
 @media screen and (max-width: 480px) {
   header, main {
@@ -177,6 +203,10 @@ border-bottom: 1px solid black;
     width: 90%;
   }
   /* mobile - articles.html */
+  /* mobile - contact.html */
+  .contact-entry {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 481px) {
@@ -216,6 +246,22 @@ border-bottom: 1px solid black;
   /* tablet - articles.html */
   .ta-item {
     padding: 2rem 0;
+  }
+  /* tablet - contact.html */
+  .contact-head {
+    > h1 {
+      font-size: 3rem;
+    }
+    > h2 {
+      font-size: 1.4rem;
+    }
+  }
+  .this-contact {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .contact-entry {
+    width: 40%;
   }
 }
 @media screen and (min-width:1024px) {
