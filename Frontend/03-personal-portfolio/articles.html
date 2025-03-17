@@ -14,40 +14,41 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <div>
-      <i><img src="" alt="Website icon."></i>
+    <div class="brand">
+      <i><img src="favicon/logo.svg" alt="Website icon."></i>
       <span>Shem Mariano</span>
     </div>
 
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="#">Articles</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="projects.html">Projects</a></li>
+        <li class="nav-item"><a href="#">Articles</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="this-articles">
+    <h1>Articles</h1>
     <section>
-      <h1>Articles: Frontend Development</h1>
-      <ul>  
-        <li>
+      <ul class="this-articles-list">  
+        <li class="ta-item">
           <h2>HTML Basics: The Foundation of Web Development</h2>
           <p>Learn the essential structure of HTML, from tags and elements to forms and tables. 
             This guide will help you build a solid foundation for creating web pages from scratch.</p>
         </li>
-        <li>
+        <li class="ta-item">
           <h2>CSS for Beginners: Styling the Web Like a Pro</h2>
           <p>Discover how to use CSS to bring your web pages to life with colors, layouts, and animations. 
             This article covers fundamental concepts like selectors, properties, and responsive design.</p>
         </li>
-        <li>
+        <li class="ta-item">
           <h2>JavaScript Essentials: Making Your Website Interactive</h2>
           <p>Explore the power of JavaScript to add dynamic functionality to your web pages. 
             Learn about variables, functions, DOM manipulation, and event handling to enhance user experience.</p>
