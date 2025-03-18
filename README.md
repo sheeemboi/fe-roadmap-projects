@@ -18,3 +18,4 @@ Contains all submitted projects and solutions on front-end development in roadma
 # Other Projects
 
 1. [Basic To-Do List](https://github.com/mariano-shem/roadmap.sh-projects/tree/main/Other%20Projects/basic-todo-list)
+2. [Counter App](https://github.com/mariano-shem/roadmap.sh-projects/tree/main/Other%20Projects/counter-app)
