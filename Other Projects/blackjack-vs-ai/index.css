@@ -1,0 +1,302 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white: #d9d9d9;
+  --yellow: #FFE478;
+  --green: #36C257;
+  --red: #D95D5D;
+  --faint-green: #175420BF;
+  --bebas: "Bebas Neue", sans-serif;
+  --fancy-font: "Grenze Gotisch", serif;
+}
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--green);
+  font-family: var(--bebas);
+  color: #f2f4f6;
+  font-size: 16px;
+  overflow: hidden;
+  height: max-content;
+}
+button {
+  font-family: inherit;
+}
+main {
+  display: flex;
+  /* border: 1px solid yellow; */
+
+}
+.tbl-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid white; */
+}
+.hand {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* margin: 1rem 0; */
+  padding: 1rem 0;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.hand span {
+  position: relative;
+  margin: 0.5rem 0.5rem;
+  padding: 0.4rem;
+  background-color: #e7e7e7;
+  color: black;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.suit {
+  position: absolute;
+  height: inherit;
+  right: -70%;
+}
+.total {
+  background-color: var(--faint-green);
+  height: 2rem;
+  width: 5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  text-justify: center;
+  text-align: center;
+}
+.game-msg {
+  font-family: var(--fancy-font);
+  font-size: 2rem;
+  color: var(--yellow);
+  height: 2.5rem;
+  margin: 0.75rem 0;
+}
+.bet-wrap {
+  background-color: #2d2d2dcc;
+  padding: 1rem 0;
+  display: flex;
+}
+.bets {
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  border-style: dashed;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+  transition: scale 0.2s;
+}
+.bets:hover, .bets:active {
+  scale: 1.1;
+}
+.bets:active {
+  filter: brightness(1.5);
+}
+.b-red {
+  border-color: #BC1A1A;
+  color: #BC1A1A;
+}
+.b-green {
+  border-color: #248E44;
+  color: #248E44;
+}
+.b-blue {
+  border-color: #24498E;
+  color: #24498E;
+}
+.b-yell {
+  border-color: #d89720;
+  color: #d89720;
+}
+.b-purp {
+  border-color: #8726A1;
+  color: #8726A1;
+}
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid green; */
+}
+.btn-wrap button {
+  display: none;
+  border: none;
+  box-shadow: 0 4px 3px;
+}
+.btn-wrap button:hover {
+  filter: brightness(1.3);
+}
+.btn-wrap button:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+.double {
+  background-color: #F49B4E;
+  color: #664a15;
+}
+.hit {
+  background-color: #EBF44E;
+  color: #616615;
+}
+.stand {
+  background-color: #5D80D9;
+  color: #47189E;
+}
+.restart {
+  background-color: #36C257;
+  color: #1E5B36;
+}
+.confbet {
+  background-color: #36C257;
+  color: #1E5B36;
+}
+.reset-bet, .reset-bank {
+  background-color: var(--red);
+  color: #9E1818;
+}
+
+.bal-wrap {
+  max-height: max-content;
+  display: flex;
+  /* border: 1px solid blue; */
+}
+.bal {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.bal span:first-child {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.bal span:last-child {
+  display: flex;
+  align-items: center;
+  color: var(--yellow);
+  padding-left: 0.5rem;
+  border-radius: 8px;
+  background-color: #2D2D2D;
+}
+
+
+@media (orientation: landscape) {
+  body {
+    background-image: url(assets/board_landscape.svg);
+  }
+  main {
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .tbl-wrap {
+    height: 50%;
+    width: 100%;
+  }
+  .suit {
+    right: -70%;
+  }
+  .btn-wrap, .bal-wrap {
+    width: 50%;
+  }
+  .bet-cont {
+    height: 6rem;
+    width: 100%;
+  }
+  .bet-wrap {
+    justify-content: center;
+  }
+  .hand span {
+    font-size: 2rem;
+    height: 8rem;
+    width: 6rem;
+  }
+  .bets {
+    font-size: 1.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-width: 0.75rem;
+  }
+  .btn-wrap button {
+    font-size: 2rem;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 8px;
+    margin: 0 1rem;
+  }
+  .bal span:last-child {
+    height: 5rem;
+    width: 10rem;
+    font-size: 3rem;
+  }
+}
+@media (orientation: portrait) {
+  body {
+    background-image: url(assets/board_portrait.svg);
+  }
+  main {
+    height: 100vh;
+    flex-wrap: wrap;
+  }
+  .hand span {
+    font-size: 1.5rem;
+    height: 6rem;
+    width: 4rem;
+  }
+  .suit {
+    right: -90%;
+  }
+  .tbl-wrap {
+    height: 50%;
+  }
+  .tbl-wrap, .bet-cont {
+    width: 100%;
+  }
+  .bal-wrap, .btn-wrap {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+  }
+  .btn-wrap {
+    padding-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .bet-cont {
+    height: 3.5rem;
+  }
+  .bet-wrap {
+    justify-content: center;
+  }
+  .bets {
+    font-size: 1rem;
+    height: 3rem;
+    width: 3rem;
+    border-width: 0.4rem;
+  }
+  .btn-wrap button {
+    font-size: 2rem;
+    aspect-ratio: 7 / 3;
+    width: 80%;
+    border-radius: 4px;
+    margin: 1rem 0;
+  }
+  .bal {
+    margin: 0 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .bal span:first-child {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  .bal span:last-child {
+    height: 3rem;
+    width: 8rem;
+    font-size: 2rem;
+  }
+}

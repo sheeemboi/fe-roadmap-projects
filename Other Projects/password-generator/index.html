@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shem.dev - Password Generator</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.svg" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <h1>Password Generator</h1>
+      <form id="mainForm">
+        <!-- Input text to display generated password -->
+        <section class="output-wrap">
+          <input type="text"
+            id="pwField"
+            class="output"
+            contenteditable="false"
+            readonly
+          />
+          <i class="output-copy"><img src="./assets/copy-solid.svg" alt="Copy"></i>
+        </section>
+        <!-- Slider to adjust password length -->
+        <section class="length-wrap">
+          <div class="length-label">
+            <h2>Length</h2>
+            <label id="charNum">8</label>
+          </div>
+          <input type="range"
+            id="charRng"
+            min="1"
+            max="25"
+            value="1" 
+          />
+          <div class="slider-fill"></div>
+        </section>
+        <!-- Checkboxes to customize password -->
+        <section class="toggle-wrap">
+          <input type="checkbox" id="uppTgl" />
+          <img src="./assets/square-regular.svg" alt="O" class="checkmark">
+          <label for="uppTgl">Include Uppercase Letters</label>
+        </section>
+
+        <section class="toggle-wrap">
+          <input type="checkbox" id="numTgl" />
+          <img src="./assets/square-regular.svg" alt="O" class="checkmark">
+          <label for="numTgl">Include Numbers</label>
+        </section>
+
+        <section class="toggle-wrap">
+          <input type="checkbox" id="symTgl" />
+          <img src="./assets/square-regular.svg" alt="O" class="checkmark">
+          <label for="symTgl">Include Symbols</label>
+        </section>
+        <!-- Password strength indicator -->
+        <section class="strength-wrap">
+          <div class="strength-label">
+            <h2>Strength</h2>
+            <label id="strLabel">Very Weak</label>
+          </div>
+          <div class="level-wrap">
+            <span class="level str-1"></span>
+            <span class="level str-2"></span>
+            <span class="level str-3"></span>
+            <span class="level str-4"></span>
+          </div>
+        </section>
+        <!-- Generate button -->
+        <button type="submit" id="genBtn">GENERATE PASSWORD</button>
+      </form>
+    </main>
+
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>

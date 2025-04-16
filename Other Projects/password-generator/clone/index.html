@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator Clone</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <form id="form" action="">
+      <input 
+        type="range"
+        id="lenSlider"
+        min="8"
+        max="24"
+        value="8"
+      >
+      <label id="lenLabel" for="lenSlider">8</label>
+      <input id="inpResult" type="text" readonly>
+      <button id="genBtn" type="submit">Generate</button>
+    </form>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

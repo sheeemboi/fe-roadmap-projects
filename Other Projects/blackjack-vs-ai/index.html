@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shem.dev - BlackJack on JS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/x-icon" href="assets/dev_logo.svg">
+  <meta name="title" property="og:title" content="shem.dev - BlackJack on JS">
+  <meta name="type" property="og:type" content="website">
+  <meta name="type" property="og:type" content="website">
+  <meta name="url" property="og:url" content="https://github.com/mariano-shem/js_interactive_blackjack">
+  <meta name="image" property="og:image" content="assets/thumb_1200x630.jpg">
+  <script src="https://kit.fontawesome.com/1a53385339.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main>
+    <section class="tbl-wrap">
+      <section class="hand dealer"></section>
+      <p class="total t-dealer"></p>
+      <p class="game-msg">BlackJack on <i class="fa-brands fa-js"></i></p>
+      <section class="hand player"></section>
+      <p class="total t-player"></p>
+    </section>
+
+    <section class="bet-cont">
+      <section class="bet-wrap">
+        <button type="button" class="bets b-red">10</button>
+        <button type="button" class="bets b-green">50</button>
+        <button type="button" class="bets b-blue">100</button>
+        <button type="button" class="bets b-yell">500</button>
+        <button type="button" class="bets b-purp">1000</button>
+      </section>
+    </section>
+    
+    <section class="bal-wrap">
+      <section class="bal chip-bal">
+        <span>BALANCE:</span>
+        <span class="mychips"></span>
+      </section>
+      <section class="bal bet-bal">
+        <span>BET:</span>
+        <span class="betinfo">$0</span>
+      </section>
+      <section class="bal ret-bal">
+        <span>RETURN:</span>
+        <span class="myreturn">$0</span>
+      </section>
+    </section>
+    <section class="btn-wrap">
+      <button class="btn double" type="button">Double</button>
+      <button class="btn hit" type="button">Hit</button>
+      <button class="btn stand" type="button">Stand</button>
+      <button class="btn restart" type="button">Play Again</button>
+      <button type="button" class="reset-bank">Reset Bank</button>
+      <button type="button" class="confbet">DONE</button>
+      <button type="button" class="reset-bet">CLEAR</button>
+    </section>
+  </main>
+  <script src="index.js"></script>
+  <script src="test.js"></script>
+</body>
+</html>

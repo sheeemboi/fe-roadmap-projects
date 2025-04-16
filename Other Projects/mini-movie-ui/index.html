@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake MovieHub</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1a53385339.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <p>shem.dev</p>
+      <div class="search-toolbar">
+				<div class="search-icon"><i class="fa-solid fa-magnifying-glass fa-lg"></i></div>
+        <input type="text" name="search" id="search" placeholder="Search..." class="search-bar" />
+
+        <select name="select-genre" id="selectGenre">
+          <option value="all">Genre</option>
+          <option value="action">Action</option>
+          <option value="adventure">Adventure</option>
+          <option value="comedy">Comedy</option>
+          <option value="drama">Drama</option>
+          <option value="mystery">Mystery</option>
+          <option value="sci-fi">Sci-Fi</option>
+          <option value="thriller">Thriller</option>
+          <option value="war">War</option>
+        </select>
+      </div>
+    </header>
+    <main>
+      <h2 class="main-header">Featured Movies</h2>
+      <section class="movie-list">
+        <div class="movie-card">
+          <div class="poster-wrap">
+            <img
+              src="https://www.movieposters.com/cdn/shop/files/interstellar-139399_480x.progressive.jpg?v=1708527823"
+              alt="Interstellar"
+            />
+          </div>
+          <p>Interstellar</p>
+        </div>
+      </section>
+      <form id="addMovieForm">
+        <div>
+          <label for="title">Title: </label>
+          <input type="text" name="title" id="title" />
+        </div>
+
+        <div>
+          <label for="genre">Genre: </label>
+          <input type="text" name="genre" id="genre" />
+        </div>
+
+        <div>
+          <label for="director">Director: </label>
+          <input type="text" name="director" id="director" />
+        </div>
+
+        <div>
+          <label for="year">Year Released: </label>
+          <input type="number" name="year" id="year" max="2025" />
+        </div>
+
+        <div>
+          <label for="runtime">Runtime: </label>
+          <input type="number" name="runtime" id="runtime" />
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
