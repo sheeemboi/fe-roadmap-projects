@@ -1,16 +1,30 @@
-let count = 0
-const countEl  = document.getElementById("count-el")
-const saveEl = document.getElementById("save-el")
-const increment = () => {
-  count += 1
-  countEl.textContent = count
-  console.log(count)
+const counter = function() {
+  let count = 0;
+
+  function increment() {
+    return count += 1;
+  }
+
+  function decrement() {
+    return count = count === 0 ? count : count -= 1;
+  }
+
+  function reset() {
+    return count = 0;
+  }
+
+  function getResult() {
+    return count;
+  }
+
+  return {increment, decrement, reset, getResult};
+}();
+
+function displayCount(operator) {
+  document.querySelector(".count").textContent = counter[operator]();
 }
 
-function save() {
-  const breakTag = document.createElement("br")
-  saveEl.append(count, " Counts", breakTag)
-  count = 0
-  countEl.textContent = count
 
-}
+document.querySelector("#increment").addEventListener("click", () => displayCount("increment"))
+document.querySelector("#decrement").addEventListener("click",() => displayCount("decrement"))
+document.querySelector("#reset").addEventListener("click",() => displayCount("reset"))
