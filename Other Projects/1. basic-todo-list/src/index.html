@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO-DO LIST</title>
+
+    <meta
+      name="description"
+      content="Simple to-do list using HTML, CSS, and Javascript"
+    />
+    <meta
+      name="keywords"
+      content="to-do list, project, HTML, CSS, Javascript"
+    />
+    <meta name="author" content="Shem Mariano" />
+
+    <meta property="og:title" content="To-Do List" />
+    <meta
+      property="og:description"
+      content="Simple to-do list using HTML, CSS, Javascript"
+    />
+
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+
+  <body class="font-spline bg-blue-950">
+    <main class="mx-auto mt-8 max-w-120">
+      <div
+        class="flex p-5 mb-4 bg-gray-100 justify-between items-center rounded-xl"
+      >
+        <h1 class="text-3xl font-bold text-start text-gray-900">To-Do List</h1>
+        <p id="clock" class="text-lg font-bold text-end text-gray-900"></p>
+      </div>
+      <div class="bg-gray-100 min-h-100 p-8 rounded-xl">
+        <div class="mx-auto w-full flex relative">
+          <input
+            type="text"
+            id="newList"
+            name="new-list"
+            required
+            placeholder="Add item..."
+            class="rounded-xl p-3 pr-24 bg-gray-300 text-xl flex-[9] outline-blue-800"
+          />
+          <button
+            id="addBtn"
+            type="button"
+            class="absolute right-0 bg-blue-800 text-gray-300 text-b py-3 px-6 text-xl rounded-xl flex-[1] cursor-pointer"
+          >
+            Add
+          </button>
+          <!-- <span id="errMsg"></span> -->
+        </div>
+        <ul id="list" class="mt-4"></ul>
+      </div>
+    </main>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>

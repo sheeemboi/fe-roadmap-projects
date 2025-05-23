@@ -1,0 +1,18 @@
+{
+  "name": "1.-basic-todo-list",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.7"
+  }
+}
