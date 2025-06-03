@@ -94,8 +94,14 @@ function displayForecast(...forecastdata) {
     const day = date.slice(8, 10);
     console.log(month, day);
     li.querySelector("img").src = icon;
-    li.querySelectorAll("span")[0].textContent = `${months[month - 1]} ${day}`;
-    li.querySelectorAll("span")[1].textContent = `${temp.toFixed(0)}°C`;
+    li.querySelectorAll("span")[0].innerHTML = `<p class="text-xs">${
+      months[month - 1]
+    }</p><p class="text-3xl">${day}</p>`;
+    li.querySelectorAll(
+      "span"
+    )[1].innerHTML = `<p class="text-3xl">${temp.toFixed(
+      0
+    )}</p><p class="text-xs">°C</p>`;
   });
 
   /**
