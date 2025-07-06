@@ -20,10 +20,22 @@ Contains all submitted projects and solutions on front-end development in roadma
 ## Related Projects
 
   <div>
-    <a href="./related_projects/1-basic-todo-list/"><img src="./assets/to-do-list.png" style="width: 30%;">
+    <a href="./related_projects/1-basic-todo-list/"><img src="./assets/to-do-list.png" style="width: 24%;">
     </a>
-    <a href="./related_projects/2-counter-app/"><img src="./assets/counter-app.png" style="width: 30%;">
+    <a href="./related_projects/2-counter-app/"><img src="./assets/counter-app.png" style="width: 24%;">
     </a>
-    <a href="./related_projects/3-blackjack-vs-ai/"><img src="./assets/blackjack.png" style="width: 30%;">
+    <a href="./related_projects/3-blackjack-vs-ai/"><img src="./assets/blackjack.png" style="width: 24%;">
+    </a>
+    <a href="./related_projects/4-password-generator/"><img src="./assets/password-generator.png" style="width: 24%;">
+    </a>
+  </div>
+  <div>
+    <a href="./related_projects/5-moviehub-home/"><img src="./assets/moviehub-home.png" style="width: 24%;">
+    </a>
+    <a href="./related_projects/6-basic-calc/"><img src="./assets/calculator.png" style="width: 24%;">
+    </a>
+    <a href="./related_projects/7-basic-form-sample/"><img src="./assets/basic-form-sample.png" style="width: 24%;">
+    </a>
+    <a href="./related_projects/8-weather/"><img src="./assets/weather.png" style="width: 24%;">
     </a>
   </div>
