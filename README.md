@@ -6,7 +6,7 @@ Contains all submitted projects and solutions on front-end development in roadma
 
 <a href="https://roadmap.sh/projects/single-page-cv" style="margin-left: auto">Single-Page CV</a> -
 <a href="https://roadmap.sh/projects/basic-html-website" style="margin-left: auto">Basic HTML Website</a> -
-<a href="https://roadmap.sh/projects/portfolio-website" style="margin-left: auto">Portfolio Website</a>
+<a href="https://roadmap.sh/projects/portfolio-website" style="margin-left: auto">Personal Portfolio</a>
 
   <div>
     <a href="./roadmap-sh/01-single-page-cv/"><img src="./assets/single-page-cv.png" style="width: 30%;">
