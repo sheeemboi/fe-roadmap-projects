@@ -4,37 +4,26 @@ Contains all submitted projects and solutions on front-end development in roadma
 
 ## roadmap.sh
 
-<div style="display: flex; justify-content: flex-start; gap: 24px; flex-wrap: wrap;">
-    <section style="display: flex; flex-direction: column">
-      <a href="https://github.com/sheeemboi/frontend-roadmap-projects/tree/main/roadmap-sh/01-single-page-cv"><img src="./assets/single-page-cv.png" style="width: 100px;">
-      </a>
-      <a href="https://roadmap.sh/projects/single-page-cv" style="margin-left: auto">Project Detail</a>
-    </section>
-    <section style="display: flex; flex-direction: column">
-      <a href="https://github.com/sheeemboi/frontend-roadmap-projects/tree/main/roadmap-sh/02-basic-html-website"><img src="./assets/basic-html-website.png" style="width: 100px;">
-      </a>
-      <a href="https://roadmap.sh/projects/basic-html-website" style="margin-left: auto">Project Detail</a>
-    </section>
-    <section style="display: flex; flex-direction: column">
-      <a href="https://github.com/sheeemboi/frontend-roadmap-projects/tree/main/roadmap-sh/03-personal-portfolio"><img src="./assets/personal-portfolio.png" style="width: 100px;">
-      </a>
-      <a href="https://roadmap.sh/projects/portfolio-website" style="margin-left: auto">Project Detail</a>
-    </section>
-</div>
+<a href="https://roadmap.sh/projects/single-page-cv" style="margin-left: auto">Single-Page CV</a> -
+<a href="https://roadmap.sh/projects/basic-html-website" style="margin-left: auto">Basic HTML Website</a> -
+<a href="https://roadmap.sh/projects/portfolio-website" style="margin-left: auto">Portfolio Website</a>
+
+  <div>
+    <a href="./roadmap-sh/01-single-page-cv/"><img src="./assets/single-page-cv.png" style="width: 200px;">
+    </a>
+    <a href="./roadmap-sh/02-basic-html-website/"><img src="./assets/basic-html-website.png" style="width: 200px;">
+    </a>
+    <a href="./roadmap-sh/03-personal-portfolio/"><img src="./assets/personal-portfolio.png" style="width: 200px;">
+    </a>
+  </div>
 
 ## Related Projects
 
-<div style="display: flex; justify-content: flex-start; gap: 24px">
-    <section style="display: flex; flex-direction: column">
-      <a href="https://github.com/sheeemboi/frontend-roadmap-projects/tree/main/related_projects/1-basic-todo-list"><img src="./assets/to-do-list.png" style="width: 100px;">
-      </a>
-    </section>
-    <section style="display: flex; flex-direction: column">
-      <a href="https://github.com/sheeemboi/frontend-roadmap-projects/tree/main/related_projects/2-counter-app"><img src="./assets/counter-app.png" style="width: 100px;">
-      </a>
-    </section>
-    <section style="display: flex; flex-direction: column">
-      <a href="https://github.com/sheeemboi/frontend-roadmap-projects/tree/main/related_projects/2-counter-app"><img src="./assets/blackjack.png" style="width: 100px;">
-      </a>
-    </section>
-</div>
+  <div>
+    <a href="./related_projects/1-basic-todo-list/"><img src="./assets/to-do-list.png" style="width: 200px;">
+    </a>
+    <a href="./related_projects/2-counter-app/"><img src="./assets/counter-app.png" style="width: 200px;">
+    </a>
+    <a href="./related_projects/3-blackjack-vs-ai/"><img src="./assets/blackjack.png" style="width: 200px;">
+    </a>
+  </div>
