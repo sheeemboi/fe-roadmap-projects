@@ -10,9 +10,11 @@ export async function getData(input_city = "Manila") {
     const weather_response = await fetch(
       `http://api.weatherapi.com/v1/forecast.json?key=${
         import.meta.env.VITE_API_KEY
-      }&q=${input_city}&days=4`
+      }&q=${input_city}&days=3`
     );
     const weather_data = await weather_response.json();
+
+    console.log(weather_data);
     // Destructuring data--
     const {
       location: { name: city, country },
@@ -36,27 +38,24 @@ export async function getData(input_city = "Manila") {
               avgtemp_c: day3_temp,
               condition: { icon: day3_icon },
             },
-          },
-          {
-            date: date4,
-            day: {
-              avgtemp_c: day4_temp,
-              condition: { icon: day4_icon },
-            },
-          },
+          }
         ],
       },
     } = weather_data;
+
+    console.log("Checkpoint here");
     displayWeather(city, country, icon, temp_c, text);
     displayForecast(
       { date: date2, icon: day2_icon, temp: day2_temp },
-      { date: date3, icon: day3_icon, temp: day3_temp },
-      { date: date4, icon: day4_icon, temp: day4_temp }
+      { date: date3, icon: day3_icon, temp: day3_temp }
     );
   } catch (error) {
+    console.error("Something went wrong. Check data fetching codebase.");
     console.error(error);
   }
 }
+
+
 async function displayWeather(...weatherdata) {
   const [city, country, icon, temp_c, condition] = weatherdata;
   try {
