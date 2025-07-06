@@ -1,8 +1,8 @@
-# roadmap.sh-projects
-
-Contains all submitted projects and solutions on front-end development in roadmap.sh.
+# frontend-roadmap-projects
 
 ## roadmap.sh
+
+Contains all submitted projects and solutions on front-end development in roadmap.sh.
 
 <a href="https://roadmap.sh/projects/single-page-cv" style="margin-left: auto">Single-Page CV</a> -
 <a href="https://roadmap.sh/projects/basic-html-website" style="margin-left: auto">Basic HTML Website</a> -
@@ -18,6 +18,8 @@ Contains all submitted projects and solutions on front-end development in roadma
   </div>
 
 ## Related Projects
+
+  Javascript-focused projects. Also includes projects that utilises frameworks and libraries.
 
   <div>
     <a href="./related_projects/1-basic-todo-list/"><img src="./assets/to-do-list.png" style="width: 24%;">
