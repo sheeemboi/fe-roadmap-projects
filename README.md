@@ -9,7 +9,7 @@ Contains all submitted projects and solutions on front-end development in roadma
 <a href="https://roadmap.sh/projects/portfolio-website" style="margin-left: auto">Personal Portfolio</a>
 
   <div>
-    <a href="https://sheeemboi.github.io/frontend-roadmap-projects/roadmap-sh/01-single-page-cv/"><img src="./assets/single-page-cv.png" style="width: 30%;">
+    <a href="https://sheeemboi.github.io/frontend-roadmap-projects/roadmap-sh/01-single-page-cv/" target="_blank"><img src="./assets/single-page-cv.png" style="width: 30%;">
     </a>
     <a href="https://sheeemboi.github.io/frontend-roadmap-projects/roadmap-sh/02-basic-html-website/"><img src="./assets/basic-html-website.png" style="width: 30%;">
     </a>
